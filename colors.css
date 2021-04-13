@@ -1,5 +1,8 @@
 body {
-	--primary-color: #fafafa;
-    --secondary-color: #00ff9d;
-    --tertiary-color: #000;
+	--first-color: #00ff9d;
+    --second-color: #002718;
+    --third-color: #00140c;
+    --fourth-color: #6c9384;
+    --fifth-color: #ebfff7;
+    --sixth-color: #00623c;
 }

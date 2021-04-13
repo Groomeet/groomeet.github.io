@@ -1,110 +1,416 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>PAGE_TITLE</title>
-  <meta name="description" content="PAGE_DESCRIPTION">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <meta name="theme-color" content="#fafafa">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Groomeet</title>
+  <meta content="" name="description">
+
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  
   <link href="colors.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: FlexStart - v1.2.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
+
 <body>
-  <main class="wrapper">
-    <section class="offer">
-      <img class="offer__image" src="logo.png" alt="Logo"/>
-      <h1 class="offer__title">
-        OFFER_TITLE
-      </h1>
-      <p class="offer__description">
-        OFFER_DESCRIPTION
-      </p>
-      <p>Puedes acceder a nuestra app</p>
-      <a href="http://groomeet1.herokuapp.com/">Groomeet</a>
-    </section>
-    <section class="form">
-      <h2 class="form__title">
-        FORM_TITLE
-      </h2>
-      <p class="form__description">
-        FORM_DESCRIPTION  
-      </p>
-      <form action="FORM_RESPONSE_URL" method="POST">
-        <input class="form__input" type="text" required name="NAME_INPUT" placeholder="Tu nombre (sin apellidos)"/>
-        <input class="form__input" type="email" required name="emailAddress" placeholder="Tu correo electrónico"/>
-        <small class="form__legal">
-            Al hacer clic en el siguiente botón, acepta nuestros términos y condiciones de uso. 
-            Conozca cómo recopilamos, usamos y compartimos sus datos en nuestra <a target="_blank" href="politica-privacidad.txt">política de privacidad.</a>
-        </small>
-        <button class="form__button" type="submit">CALL_TO_ACTION</button>
-      </form>
-    </section> 
-    <div class="team">
-      <h1 class="team__title team__title--position">Conoce a nuestro equipo</h1>
-      <div class="subteam">
-          <h2 class="subteam__title subteam__title--position">Gestión</h2>
-          <div class="member">
-            <img class="member__img" src="images/team/pedrobiedmafresno.png" alt="Team member">
-            <p class="member__name">Pedro Biedma Fresno</p>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/GROOMEET_NEGATIVO_FONDO_VERDE_letras.png" alt="">
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="#about">Sobre nosotros</a></li>
+          <li class="dropdown"><a href="#team"><span>Equipo</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#gestion">Gestión</a></li>
+              <li><a href="#backend">Backend</a></li>
+              <li><a href="#frontend">FrontEnd</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contacta</a></li>
+          <li><a class="getstarted scrollto" href="http://groomeet1.herokuapp.com/">Pruébalo</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Te conectamos a otros músicos</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Somos una herramienta que ofrece servicios a musicos y bandas del mundo que desean colaborar.</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="http://groomeet1.herokuapp.com/" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Pruébalo</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
           </div>
-          <div class="member">
-            <img class="member__img" src="images/team/carlosacuñaromero.png" alt="Team member">
-            <p class="member__name">Carlos Acuña Romero</p>
-          </div>
-      </div>
-      <div class="subteam">
-        <h2 class="subteam__title subteam__title--position">Backend</h2>
-        <div class="member">
-          <img class="member__img" src="images/team/franciscoalepalacios.png" alt="Team member">
-          <p class="member__name">Francisco Alé Palacios</p>
         </div>
-        <div class="member">
-          <img class="member__img" src="images/team/josemanuelgata.jpg" alt="Team member">
-          <p class="member__name">José Manuel Gata</p>
-        </div>
-        <div class="member">
-          <img class="member__img" src="images/team/guillermolosadaostos.jpg" alt="Team member">
-          <p class="member__name">Guillermo Losada Ostos</p>
-        </div>
-        <div class="member">
-          <img class="member__img" src="images/team/enriquemerinoverde.jpg" alt="Team member">
-          <p class="member__name">Enrique Merino Verde</p>
-        </div>
-        <div class="member">
-          <img class="member__img" src="images/team/albertoparrasmoreno.jpg" alt="Team member">
-          <p class="member__name">Alberto Parras Moreno</p>
-        </div>
-      </div>
-      <div class="subteam">
-        <h2 class="subteam__title subteam__title--position">FrontEnd</h2>
-        <div class="member">
-          <img class="member__img" src="images/team/danieltorovalle.png" alt="Team member">
-          <p class="member__name">Daniel Toro Valle</p>
-        </div>
-        <div class="member">
-          <img class="member__img" src="images/team/miguelyanesariza.jpg" alt="Team member">
-          <p class="member__name">Miguel Yanes Ariza</p>
-        </div>
-        <div class="member">
-          <img class="member__img" src="images/team/diegohorrilloduran.jpg" alt="Team member">
-          <p class="member__name">Diego Horrillo Durán</p>
-        </div>
-        <div class="member">
-          <img class="member__img" src="images/team/marcoantoniofernandez.jpg" alt="Team member">
-          <p class="member__name">Marco Antonio Fernández</p>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/GROOMEET_1.png" class="img-fluid" alt="">
         </div>
       </div>
     </div>
-  </main>
-  <!--[if IE]>
-    <p class="browserupgrade">
-      Estás usando un navegador <strong>obsoleto</strong>.
-      Por favor <a href="browsehappy" target="_blank">actualiza tu navegador</a> para mejorar tu experiencia y seguridad.
-    </p>
-  <![endif]-->
-  <script src="main.js"></script>
-  <link href="style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>Quienes somos</h3>
+              <h2>AYUDANOS A DESARROLLAR GROOMEET</h2>
+              <p>
+                Groomeet es una web destinada a conectar a musicos cercanos. Este proyecto pertenece a un grupo de estudiantes de la universidad de Sevilla para la asignatura de Ingeniería del Software y Practica Profesional. ¿Te interesa colaborar con nosotros? Puedes formar parte de la creación de una red social probándola y aportando tus opiniones en diferentes encuestas.
+              </p>
+              <div class="text-center text-lg-start">
+                <a href="http://groomeet1.herokuapp.com/" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Demo</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+
+      <div id="gestion" class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Equipo</h2>
+          <p>Gestión</p>
+        </header>
+
+        <div class="row gy-2 justify-content-center">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/pedrobiedmafresno.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://github.com/pedbiefre"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Pedro Biedma Fresno</h4>
+                <span>Project Manager</span>
+                <p>Durante la carrera he desarrollado aplicaciones web para la gestión de información usando las tecnologías mencionadas y realizado trabajos sobre inteligencia artificial.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Carlos Acuña Romero</h4>
+                <span>Secretario</span>
+                <p>Desarrollo de aplicaciones web en JS con Angular.js, en J2EE con Spring y Python con Django, así como experiencia en la configuración de herramientas de integración continua mediante Git. Experiencia laboral en el liderazgo de equipos en el sector tecnológico</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="backend" class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <p>Backend</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/franciscoalepalacios.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://github.com/fraalepal"><i class="bi bi-github"></i></a>
+                  <a href="https://es.linkedin.com/in/francisco-al%C3%A9-palacios-173477195"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Francisco Alé Palacios</h4>
+                <span>Coordinador</span>
+                <p>Desarrollo de aplicaciones web tanto con Django como con WordPress, además de realizar aplicaciones de escritorio con Python. Desarrollo de aplicaciones móviles (Android) desde hace 2 años. Experiencia en diseño de assets y recursos gráficos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/guillermolosadaostos.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://github.com/guilosost"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/guillermo-losada-ostos/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Guillermo Losada Ostos</h4>
+                <span>Desarrollador</span>
+                <p>Experiencia laboral desarrollando un asistente de texto aplicando técnicas de PLN para el entendimiento entre la base de conocimiento y el framework de desarrollo del asistente. Automatización del despliegue de este mediante dockerización de todos los servicios.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/enriquemerinoverde.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://github.com/enrmerver"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Enrique Merino Verde</h4>
+                <span>Desarrollador</span>
+                <p>Realización de proyectos con diversas tecnologías expuestas y experiencia autodidacta en el manejo básico de las principales herramientas de ciberseguridad como Metasploit o Kali Linux.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/albertoparrasmoreno.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://github.com/albparmor2"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Alberto Parras Moreno</h4>
+                <span>Desarrollador</span>
+                <p>Desarrollo de aplicaciones web haciendo uso de varios frameworks, desarrollo de soluciones software tanto para consumo propio y derivados. Uso de Git para todo el control y versionado de proyectos. Uso de herramientas para gestionar BBDD, como MySql y PostgreSQL.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/josemanuelgata.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://github.com/josgatfer"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/jos%C3%A9-manuel-gata-fern%C3%A1ndez-b94889208/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>José Manuel Gata</h4>
+                <span>Desarrollador</span>
+                <p>Desarrollo de aplicaciones web para la gestión de información, trabajos de investigación en el ámbito de la inteligencia artificial. Experiencia en la creación de aplicaciones de escritorio y en el uso de técnicas de web scraping.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="frontend" class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <p>FrontEnd</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/danieltorovalle.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://github.com/dantorval-us"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Daniel Toro Valle</h4>
+                <span>Coordinador</span>
+                <p>Desarrollo de sistemas de información web e integración de aplicaciones web a través de APIs Rest. Además de gestión de proyectos aplicando metodología Scrum y PMBOK como modelo de referencia.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/miguelyanesariza.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://github.com/migyanari"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/miguel-yanes-ariza"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Miguel Yanes Ariza</h4>
+                <span>Desarrollador / Speaker</span>
+                <p>Desarrollo de varias aplicaciones web para gestión de la información con los framework de Spring y Django, experiencia con web scraping. Experiencia en la creación de aplicaciones de escritorio con Python.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/diegohorrilloduran.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://github.com/DiegoHorrilloDuran"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/diego-horrillo-duran-99b3b7197/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Diego Horrillo Durán</h4>
+                <span>Desarrollador</span>
+                <p>Experiencia en sistemas de información y desarrollo web. Práctica en el desarrollo front-end con conocimientos medios de html, Angular, CSS, JavasCript y Bootstrap, asi como experiencia en la integración de frameworks con Django o Spring.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/marcoantoniofernandez.png" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Marco Antonio Fernández</h4>
+                <span>Desarrollador</span>
+                <p>Desarrollo de páginas web con Django, Eclipse, Anaconda y Visual Studio Code, además de tener experiencia en el uso de APIs Rest y en sistemas de recomendación. Gran experiencia desarrollando en Frontend con tecnologías de HTML, JSP, JavaScript y CSS.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Contacta</h2>
+          <p>Contactamos contigo</p>
+        </header>
+        <div class="row gy-4">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h2>Déjanos tu info de contacto y te enviaremos encuestas y pases de acceso a la aplicación.</h2>
+              <p>
+                Tus datos serán procesados por un grupo reducido de estudiantes y seán eliminados al terminar el desarrollo de la aplicación. Esto solo durará hasta Julio de 2021.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScMcUYAK9-CKWBvYf6Z6EaEqQVoPZzix1rCid3jWIjLcP6zWw/formResponse" method="post" class="php-email-form">
+              <div class="row gy-4">
+
+                <div class="col-md-12">
+                  <input type="text" name="entry.683579873" class="form-control" placeholder="Tu nombre (sin apellidos)" required>
+                </div>
+
+                <div class="col-md-12 ">
+                  <input type="email" class="form-control" name="emailAddress" placeholder="Tu correo electrónico" required>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Contactadme</button>
+                  
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
